@@ -164,25 +164,75 @@ console.log(a);
 console.log(a[n]);
 */
 
+//super jaal
 /*
-let n = prompt("gishguuriiin toog oruul"), k = prompt("bhgu bolsn gishguuriin too oruul"), k1=prompt("ali ali gishguur bhgu bolsn be"),k2=prompt("ali ali gishguur bhgu bolsn be"),k3=prompt("ali ali gishguur bhgu bolsn be"),i=1;
+let n = prompt("gishguuriiin toog oruul"), k = prompt("bhgu bolsn gishguuriin too oruul"), i,j;
 let a = [];
 
 a[0] = 1;
 
-a[1]=1;
+a[1] = 1;
 
-a[2]=2;
-for (i = 3; i <= n; i++) {
+a[2] = 2;
 
-    if (i == k1) {
-        a[i]=0;
+let evdersen = [];
+
+for (j = 0; j < k; j++) {
+    evdersen.push(prompt("hed heddeh gishguur ewdersen be?"))
+}
+
+for (i = 3; i < n; i++) {
+    for (j = 0; j < k; j++) {
+        if (evdersen[j]==i){
+            a[i]=0;
+            break;
+        }
+        else {
+            a[i] = a[i - 1] + a[i - 2] + a[i - 3];
+        }
+
     }
-    else{
-        a[i] = a[i - 1] + a[i - 2];
-    }
+
 }
 console.log(a);
-
-console.log(a[n]);
+console.log(a[n]); 
 */
+
+// calculator
+/* 
+let x = prompt("x toog oruul"), i, count = 0,tracker=1;
+
+
+while (tracker != x) {
+    if (tracker * 3 <= x) {
+        tracker = tracker * 3;
+    }
+    else if (tracker * 2 <= x) {
+        tracker = tracker * 2;
+    }
+    else {
+        tracker++;
+    }
+    count ++;
+}
+
+console.log(count);
+*/
+
+let n=prompt("n toog oruul");
+let a=[];
+for(let i=0; i<n ; i++){
+    a.push(prompt("massiviin elementiig oruul"));
+}
+
+k=prompt("shiljuuleh toog oruul");
+
+if(k>0){
+    for ( let i = 0 ; i < k ; i++ ){
+
+    }
+}else{
+    for ( let i = 0; i>k ; k++ ){
+        
+    }
+}
