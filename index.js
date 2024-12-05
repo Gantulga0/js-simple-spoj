@@ -195,11 +195,11 @@ for (i = 3; i < n; i++) {
 
 }
 console.log(a);
-console.log(a[n]); 
+console.log(a[n]);
 */
 
 // calculator
-/* 
+/*
 let x = prompt("x toog oruul"), i, count = 0,tracker=1;
 
 
@@ -219,20 +219,51 @@ while (tracker != x) {
 console.log(count);
 */
 
-let n=prompt("n toog oruul");
-let a=[];
-for(let i=0; i<n ; i++){
-    a.push(prompt("massiviin elementiig oruul"));
-}
+/* davhriin too
 
-k=prompt("shiljuuleh toog oruul");
+let davhar=prompt("davhriin toog oruul"),ail=prompt("heden ail baigaag oruul"),toot=prompt("heddeh toot be");
+let davhriin_too=(toot-1)/ail+1;
+let dugaariin_too=(toot-1)%ail+1;
 
-if(k>0){
-    for ( let i = 0 ; i < k ; i++ ){
+console.log(davhriin_too);
+console.log(dugaariin_too);
 
-    }
-}else{
-    for ( let i = 0; i>k ; k++ ){
-        
-    }
-}
+*/
+////Super shiljilt
+// let n = parseInt(prompt("n toog oruul"));
+// let a = [];
+// for (let i = 0; i < n; i++) {
+//     a.push(parseInt(prompt("massiviin elementiig oruul")));
+// }
+
+// let k = parseInt(prompt("shiljuuleh toog oruul"));
+
+// k = k % n;
+
+// if(k<0){
+//     k+=n;
+// }
+
+// for (let i = 0; i < k; i++) {
+//     temp = a[i];
+//     a[i] = a[i + 1]
+//     a[i + 1] = temp
+// }
+// console.log(a);
+
+//// orts dawhar ailiinh too
+// let a=parseInt(prompt("heden dawhartai ve?")),b=parseInt(prompt("heden ortstoi?")),c=parseInt(prompt("heden ailtai we?")), d=parseInt(prompt("heden tootiig haij baina?"));
+// let orts,davhar,toot;
+
+// orts= parseInt(d/(a*c)+1);
+
+// if(d>(a*c)){
+//     d=d%(a*c)
+// }
+
+// davhar=parseInt((d-1)/c+1);
+// toot=parseInt((d-1)%c+1);
+
+// console.log(orts);
+// console.log(davhar);
+// console.log(toot);
