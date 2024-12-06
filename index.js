@@ -267,3 +267,53 @@ console.log(dugaariin_too);
 // console.log(orts);
 // console.log(davhar);
 // console.log(toot);
+
+
+////eysh
+// let dun = [];
+// let ind = [];
+// let inx, i, j, k;
+// let n = prompt("heden suragc baigaa we")
+
+// for (i = 0; i < n; i++) {
+//     dun.push(parseInt(prompt("dung oruul")));
+// }
+
+// for (i = 0; i < n; i++) {
+//     ind.push(i + 1);
+// }
+
+// for (i = 0; i < n - 1; i++) {
+//     for (j = 0; j < n - 1 - i; j++) {
+//         if (dun[j] < dun[j + 1]) {
+//             let temp = dun[j];
+//             dun[j] = dun[j + 1];
+//             dun[j + 1] = temp;
+
+//             let tempInd = ind[j];
+//             ind[j] = ind[j + 1];
+//             ind[j + 1] = tempInd;
+//         }
+
+//     }
+// }
+
+// for(i=0 ; i<n ; i++){
+//     console.log(ind[i]);
+    
+// }
+
+
+////gcd
+// let a=Number(prompt("ehnii toog oruul"));
+// let b=Number(prompt("daraagiin toog oruul"));
+// let remainder;
+
+// while(b!==0){
+//     remainder=a%b;
+//     a=b;
+//     b=remainder;
+// }
+// console.log(a);
+
+////orgil ba yrool
