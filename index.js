@@ -1,112 +1,122 @@
-function CubepPerimetre(tal){
-    let p=(tal*tal)*6;
+function CubepPerimetre(tal) {
+    let p = (tal * tal) * 6;
     return p;
 }
 
-function CubeTalbai(tal){
-    let s=tal*tal*tal;
+function CubeTalbai(tal) {
+    let s = tal * tal * tal;
     return s;
 }
 
-function talbai(urt,urgun){
-    let s=urt*urgun;
+function talbai(urt, urgun) {
+    let s = urt * urgun;
     return s;
 }
 
-function perimetre(urt,urgin){
-    p=(urt+urgun)*2;
+function perimetre(urt, urgin) {
+    p = (urt + urgun) * 2;
     return p;
 }
 
-function funkts1(x){
-    let y=3*x-5;
+function funkts1(x) {
+    let y = 3 * x - 5;
     return y;
 }
 
-function funkts2(x){ 
-    y=4*(x*x)-3*x+5;
+function funkts2(x) {
+    y = 4 * (x * x) - 3 * x + 5;
     return y;
 }
 
-function LastDigit(x){
-    let y=x%10
+function LastDigit(x) {
+    let y = x % 10
     return y;
 }
 
-function MiddleDigit(x){
-    y=x%100;
-    y=y/10;
+function MiddleDigit(x) {
+    y = x % 100;
+    y = y / 10;
     return parseInt(y)
 }
 
-function DigitSum(num){
+function DigitSum(num) {
     sum = 0;
-    while(num!==0){
-        sum+=num%10;
-        num=Math.floor(num/10);
+    while (num !== 0) {
+        sum += num % 10;
+        num = Math.floor(num / 10);
     }
     return sum;
 }
 
-function SecToMinut(x){
- const minut= Math.floor(x/60);
- const remainingSec=x%60;
- return `${minut} ${remainingSec}`
+function SecToMinut(x) {
+    const minut = Math.floor(x / 60);
+    const remainingSec = x % 60;
+    return `${minut} ${remainingSec}`
 }
 
-function findNumber(numb){
-    for(let i=0 ; i<arr.length; i++){
-        if(a[i]==numb){
+function findNumber(numb) {
+    for (let i = 0; i < arr.length; i++) {
+        if (a[i] == numb) {
             console.log("yes");
             break;
         }
     }
 }
 
-function factorial(n){
-    let s=1;
-    for (let i=1; i<=n; i++ ){
-        s=s*i
-        console.log("!"+i+"="+s)
+function factorial(n) {
+    let s = 1;
+    for (let i = 1; i <= n; i++) {
+        s = s * i
+        console.log("!" + i + "=" + s)
     }
 }
 
-function summation(n){
-    let s=0
-    for(let i=1 ; i<=n ; i++){
-        s=s+i*(i+1);
+function summation(n) {
+    let s = 0
+    for (let i = 1; i <= n; i++) {
+        s = s + i * (i + 1);
     }
     return s;
 }
 
-function TooniiUrjver(n){
-let s=1
-    if(n%2==0){
-        for(i=1 ; i<=n ; i++){
-            if(i%2==0){
-                s=s*i;
+function TooniiUrjver(n) {
+    let s = 1
+    if (n % 2 == 0) {
+        for (i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                s = s * i;
             }
         }
-    
+
     }
-    else{
-        for(i=1 ; i<=n ;i++){
-            if(i%2==1){
-                s=s*i
+    else {
+        for (i = 1; i <= n; i++) {
+            if (i % 2 == 1) {
+                s = s * i
             }
         }
     }
     return s;
 }
 
-/*
-let n=3, i=1,s=0,sum=1;
-for(i=1 ; i<=n; i++){
-    s=1+(1/(i*i))
-    sum=sum*s;
+
+function superSum(n) {
+    let s = 0; sum = 1;
+    for (let i = 1; i <= n; i++) {
+        s = 1 + (1 / (i * i))
+        sum = sum * s;
+    }
+    return sum
 }
-console.log(sum)
-*/
+
+function sum(n) {
+    let s = 0;
+    for (let i = 1; i <= n; i++) {
+        s += i
+    }
+    return s
+}
+
 
 //shataar alhah
 /*
@@ -267,7 +277,7 @@ console.log(dugaariin_too);
 
 // for(i=0 ; i<n ; i++){
 //     console.log(ind[i]);
-    
+
 // }
 
 
@@ -285,3 +295,113 @@ console.log(dugaariin_too);
 
 ////orgil ba yrool
 
+
+function GetEven(Array) {
+    let even = Array.filter(Element => Element % 2 == 0);
+    return even;
+}
+
+function gcd(a, b) {
+    while (b !== 0) {
+        let temp = b
+        b = a % b;
+        a = temp;
+    }
+    return a
+}
+
+function isPrime(n) {
+    for (let i = 2; i <= n / 2; i++) {
+        if (n % i == 0) {
+            return "NO"
+        }
+    }
+    return "YES"
+}
+
+// //Container With Most Water First Idea
+// let a = [];
+// let v = [];
+// let n = prompt("heden shirheg bagana baih ve");
+// for (let i = 0; i < n; i++) {
+//     a.push(prompt("baganiin undriig oruul"))
+// }
+// console.log(a)
+// for (let i = 0; i < n; i++) {
+//     for (let j = i + 1; j < n; j++) {
+//         if (a[i] < a[j]) {
+//             v.push(a[i] * (j - i))
+//         }
+//         else {
+//             v.push(a[j] * (j - i))
+//         }
+//     }
+// }
+
+// console.log(v)
+
+// let maxValue = v[0]
+// for (let i = 1; i < v.length; i++) {
+//     if (maxValue < v[i]) {
+//         maxValue = v[i]
+//     }
+// }
+// console.log(maxValue);
+// var maxArea = function (height) {
+//     const a = height;
+//     let v = [];
+//     let n = a.length;
+
+//     for (let i = 0; i < n; i++) {
+//         for (let j = i + 1; j < n; j++) {
+//             if (a[i] < a[j]) {
+//                 v.push(a[i] * (j - i))
+//             }
+//             else {
+//                 v.push(a[j] * (j - i))
+//             }
+//         }
+//     }
+
+//     let maxValue = v[0]
+//     for (let i = 1; i < v.length; i++) {
+//         if (maxValue < v[i]) {
+//             maxValue = v[i]
+//         }
+//     }
+
+//     return maxValue;
+// };
+
+////Container With Most Water second Idea
+// let a = [];
+// let n = prompt("heden shirheg bagana baih ve");
+// for (let i = 0; i < n; i++) {
+//     a.push(prompt("baganiin undriig oruul"));
+// }
+// console.log(a)
+// let max = 0;
+// let left = 0;
+// let right = n - 1;
+// let height, area;
+// while (right > left) {
+//     if (a[right] < a[left]) {
+//         height = a[right]
+//     }
+//     else {
+//         height = a[left]
+//     }
+    
+//     area = height * (right - left);
+
+//     if (area > max) {
+//         max = area;
+//     }
+
+//     if (a[right] > a[left]) {
+//         left++
+//     } else {
+//         right--
+//     }
+// }
+// console.log(max)
