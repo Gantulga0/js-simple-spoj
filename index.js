@@ -1,136 +1,103 @@
-const input = document.getElementById('input');
-/* problem 3
+function CubepPerimetre(tal){
+    let p=(tal*tal)*6;
+    return p;
+}
 
-let a=5, p,s;
-s=a*a*a;
-p=(a*a)*6;
-console.log(s);
-console.log(p);
-*/
+function CubeTalbai(tal){
+    let s=tal*tal*tal;
+    return s;
+}
 
-/* problem 4
-let a=4,b=6,s,p;
+function talbai(urt,urgun){
+    let s=urt*urgun;
+    return s;
+}
 
-s=a*b;
-p=(a+b)*2;
+function perimetre(urt,urgin){
+    p=(urt+urgun)*2;
+    return p;
+}
 
-console.log(s);
-console.log(p);
+function funkts1(x){
+    let y=3*x-5;
+    return y;
+}
 
-*/
+function funkts2(x){ 
+    y=4*(x*x)-3*x+5;
+    return y;
+}
 
-/*
+function LastDigit(x){
+    let y=x%10
+    return y;
+}
 
-let x,y;
-x=1;
-y=3*x-5;
+function MiddleDigit(x){
+    y=x%100;
+    y=y/10;
+    return parseInt(y)
+}
 
-
-console.log(y);
-*/
-
-/*
-let x,y;
-
-x=-2;
-y=4*(x*x)-3*x+5;
-
-console.log(y);
-*/
-
-/*
-let n=879;
-n=n%10;
-
-console.log(n);
-*/
-
-/*
-let n=452;
-n=n%100;
-n=n/10;
-console.log(parseInt(n))
-*/
-
-/*
-let n=43,a,b;
-a=n%10;
-b=n/10;
-
-console.log(parseInt(a+b));
-*/
-
-/*
-let n=123,a,b,c;
-
-a=n%10;
-n=n/10;
-b=n%10;
-c=n/10;
-
-console.log(parseInt(a+b+c))
-*/
-/*
-let n = 200, a, b;
-
-a = n / 60;
-b = n % 60;
-
-console.log(parseInt(a));
-console.log(parseInt(b));
-*/
-
-/*
-const a=[1,6,3,4,5];
-for (let i=1;i<=5;i++){
-    if(a[i]==5){
-        console.log("yes");
-        break;
+function DigitSum(num){
+    sum = 0;
+    while(num!==0){
+        sum+=num%10;
+        num=Math.floor(num/10);
     }
+    return sum;
 }
-*/
 
-/*
-
-let n=4,s=1;
-let i=1;j=1;
-
-for (i=1; i<=n; i++ ){
-    s=s*i
-    console.log("!"+i+"="+s)
+function SecToMinut(x){
+ const minut= Math.floor(x/60);
+ const remainingSec=x%60;
+ return `${minut} ${remainingSec}`
 }
-*/
 
-/*
-
-let n=6,s=0,i=1;
-for(i=1 ; i<=n ; i++){
-    s=s+i*(i+1);
-}
-console.log(s)
-
-*/
-
-/*
-let n=7,i=1,s=1;
-if(n%2==0){
-    for(i=1 ; i<=n ; i++){
-        if(i%2==0){
-            s=s*i;
+function findNumber(numb){
+    for(let i=0 ; i<arr.length; i++){
+        if(a[i]==numb){
+            console.log("yes");
+            break;
         }
     }
-
 }
-else{
-    for(i=1 ; i<=n ;i++){
-        if(i%2==1){
-            s=s*i
+
+function factorial(n){
+    let s=1;
+    for (let i=1; i<=n; i++ ){
+        s=s*i
+        console.log("!"+i+"="+s)
+    }
+}
+
+function summation(n){
+    let s=0
+    for(let i=1 ; i<=n ; i++){
+        s=s+i*(i+1);
+    }
+    return s;
+}
+
+function TooniiUrjver(n){
+let s=1
+    if(n%2==0){
+        for(i=1 ; i<=n ; i++){
+            if(i%2==0){
+                s=s*i;
+            }
+        }
+    
+    }
+    else{
+        for(i=1 ; i<=n ;i++){
+            if(i%2==1){
+                s=s*i
+            }
         }
     }
-
+    return s;
 }
-console.log(s);
-*/
 
 /*
 let n=3, i=1,s=0,sum=1;
@@ -317,3 +284,4 @@ console.log(dugaariin_too);
 // console.log(a);
 
 ////orgil ba yrool
+
