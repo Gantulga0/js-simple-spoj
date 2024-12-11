@@ -391,7 +391,7 @@ function isPrime(n) {
 //     else {
 //         height = a[left]
 //     }
-    
+
 //     area = height * (right - left);
 
 //     if (area > max) {
@@ -405,3 +405,24 @@ function isPrime(n) {
 //     }
 // }
 // console.log(max)
+
+let email = "bat.kh@gmail.com"
+
+function emailName(name) {
+    let username = name.split("@")[0]
+    let namepart = username.split(".")
+    let firstname = namepart[1].slice(0, 2).toLowerCase()
+    let lastname = namepart[0].slice(0, 1).toUpperCase() + namepart[0].slice(1);
+
+    if (firstname=== "kh" || firstname === "sh" || firstname ==="ch") {
+        firstname = namepart[1].slice(0,1).toUpperCase()+namepart[1].slice(1,2);
+    }else{
+        firstname = namepart[1].slice(0,1).toUpperCase()
+    }
+
+return firstname+"."+lastname
+
+
+}
+
+console.log(emailName("bat.asasdf@gmail.com"));
